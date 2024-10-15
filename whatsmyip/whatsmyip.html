@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: black;
+                text-align: center;
+                color: white;
+                font-family: sans-serif;
+            }
+
+            .styled-table {
+                border-collapse: collapse;
+                margin: 25px 0;
+                font-size: 0.85em;
+                font-family: sans-serif;
+                min-width: 500px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .styled-table thead tr {
+                background-color: #009879;
+                color: #ffffff;
+                text-align: left;
+            }
+
+            .styled-table th,
+            .styled-table td {
+                padding: 12px 15px;
+            }
+
+            .styled-table tbody tr {
+                border-bottom: 1px solid #000000;
+            }
+
+            .styled-table tr {
+                border-left: 1px solid #009879;
+                border-right: 1px solid #009879;
+            }
+
+            .styled-table tbody tr:last-of-type,
+            .styled-table tbody .bottom-row {
+                border-bottom: 1px solid #009879;
+            }
+
+            .styled-table tbody tr.active-row {
+                font-weight: bold;
+                color: #009879;
+                background-color: #ffffff;
+            }
+
+            .network {
+                font-weight: bold;
+            }
+
+            a {
+                overflow: hidden;
+                position: relative;
+                display: inline-block;
+            }
+
+            a::before,
+            a::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                left: 0;
+            }
+
+            a::before {
+                background-color: #54b3d6;
+                height: 2px;
+                bottom: 0;
+                transform-origin: 100% 50%;
+                transform: scaleX(0);
+                transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+            }
+
+            a::after {
+                content: attr(data-replace);
+                height: 100%;
+                top: 0;
+                transform-origin: 100% 50%;
+                transform: translate3d(200%, 0, 0);
+                transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+                color: #54b3d6;
+            }
+
+            a:hover::before {
+                transform-origin: 0% 50%;
+                transform: scaleX(1);
+            }
+
+            a:hover::after {
+                transform: translate3d(0, 0, 0);
+            }
+
+            a span {
+                display: inline-block;
+                transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+            }
+
+            a:hover span {
+                transform: translate3d(-200%, 0, 0);
+            }
+
+            body {
+            background-image: url('img_girl.jpg');
+            }
+
+            #myVideo {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                min-height: 100%;
+            }
+
+            .content {
+                position: fixed;
+                color: #f1f1f1;
+                width: 100%;
+                padding: 20px;
+            }
+            
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="icon" href="icons/favicon.png">
+    </head>
+
+    <body>
+        <video autoplay muted loop id="myVideo">
+            <source src="icons/background.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <h1>Your public IP address is:</h1>
+            <p id="x" class="ip"></p>
+            
+            <table class="styled-table">
+                <thead>
+                    <tr><td>Reference</td><td>IP Address</td><td>Domain</td></tr>
+                </thead>
+                <tbody class="active-row">
+                    <tr><td class="network">OFFICE-IP-1</td><td id="office1">172.217.22.12</td><td>domain1.com</td></tr>
+                    <tr class="bottom-row"><td class="network">OFFICE-IP-2</td><td id="office2">172.217.22.13</td></tr>
+                    <tr class="bottom-row"><td class="network">OFFICE-IP-3</td><td id="office3">172.217.22.14</td><td>domain3.com</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="whatsmyip.js"></script>
+    </body>
+</html>

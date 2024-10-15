@@ -1,0 +1,11 @@
+selenium
+mysql-connector-python 
+webdriver_manager
+beautifulsoup4
+alive_progress
+Pillow
+urllib
+requests
+matplotlib
+sqlite3
+termcolor

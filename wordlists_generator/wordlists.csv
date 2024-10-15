@@ -1,0 +1,18 @@
+Category,URL,Filename,Description
+Generic,https://wordlists-cdn.assetnote.io/data/automated/httparchive_apiroutes_2021_10_28.txt,generic-api-wordlist.txt,Generic API endpoint from HTTP Archieve
+Generic,https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/raft-large-directories.txt,dirs-large.txt,Generic directories (LARGE)
+Generic,https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/raft-medium-directories.txt,dirs-medium.txt,Generic directories (MEDIUM)
+Generic,https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/raft-large-files.txt,files-large.txt,Generic files (LARGE)
+Generic,https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/raft-medium-files.txt,files-medium.txt,Generic files (MEDIUM)
+Generic,https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common-and-italian.txt,common-and-italian.txt,Common and italian words
+API,https://wordlists-cdn.assetnote.io/data/kiterunner/swagger-wordlist.txt,swagger-api-wordlist.txt,Swagger Common API endpoint
+Subdomain enumeration,https://wordlists-cdn.assetnote.io/data/manual/2m-subdomains.txt,2m-subdomains.txt,2 million+ subdomains generated from the GitHub dataset on BigQuery
+Subdomain enumeration,https://wordlists-cdn.assetnote.io/data/manual/best-dns-wordlist.txt,best-dns-wordlist.txt,Try this wordlist when performing a thorough DNS bruteforce of any given target
+Specific extension,https://wordlists-cdn.assetnote.io/data/manual/asp_lowercase.txt,asp-lowercase.txt,.asp files (lowercase) generated from the GitHub dataset on BigQuery
+Specific extension,https://wordlists-cdn.assetnote.io/data/manual/aspx_lowercase.txt,aspx-lowercase.txt,.aspx (lowercase) files generated from the GitHub dataset on BigQuery
+Specific extension,https://wordlists-cdn.assetnote.io/data/manual/bak.txt,bak.txt,.bak files generated from the GitHub dataset on BigQuery
+Specific extension,https://wordlists-cdn.assetnote.io/data/manual/cfm.txt,cfm.txt,.cfm files generated from the GitHub dataset on BigQuery
+Specific extension,https://wordlists-cdn.assetnote.io/data/manual/do.txt,do.txt,.do files generated from the GitHub dataset on BigQuery
+Specific extension,https://wordlists-cdn.assetnote.io/data/manual/dot_filenames.txt,dot-filenames.txt,dot files generated from the GitHub dataset on BigQuery
+Specific extension,https://wordlists-cdn.assetnote.io/data/manual/html.txt,html.txt,.html files generated from the GitHub dataset on BigQuery
+Specific extension,https://wordlists-cdn.assetnote.io/data/manual/jsp.txt,jsp.txt,.jsp files generated from the GitHub dataset on BigQuery

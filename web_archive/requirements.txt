@@ -1,0 +1,4 @@
+termcolor
+requests
+urllib
+alive_progress

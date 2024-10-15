@@ -1,0 +1,11 @@
+body img{
+    width: 400px;
+    padding: 20px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+body img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}

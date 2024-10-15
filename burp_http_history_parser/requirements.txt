@@ -1,0 +1,4 @@
+xml
+beautifulsoup4
+openpyxl
+alive-progress
